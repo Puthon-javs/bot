@@ -674,7 +674,7 @@ class Gallery(InlineUnit):
                         ext = None
 
                     args = {
-                        "thumb_url": "https://i.pinimg.com/736x/11/5c/65/115c6576c9d51dd10a35d454804af784.jpg",
+                        "thumb_url": "https://img.icons8.com/fluency/344/loading.png",
                         "caption": self._get_caption(unit["uid"], index=0),
                         "parse_mode": "HTML",
                         "reply_markup": self._gallery_markup(unit["uid"]),
