@@ -808,8 +808,7 @@ class Hikka:
             upd = "Update required" if diff else "Up-to-date"
 
             logo = (
-        
-                  "                                                                                                    \n" 
+                "                                                                                                    \n" 
                   "                                                                                                     \n" 
                   "                             ▄████████  ▄████████  ▄█     ▄████████ ███▄▄▄▄    ▄████████    ▄████████ \n" 
                   "                            ███    ███ ███    ███ ███    ███    ███ ███▀▀▀██▄ ███    ███   ███    ███  \n"
@@ -819,6 +818,7 @@ class Hikka:
                   "                                   ███ ███    █▄  ███    ███    █▄  ███   ███ ███    █▄    ███    █▄       \n"  
                   "                             ▄█    ███ ███    ███ ███    ███    ███ ███   ███ ███    ███   ███    ███       \n"      
                   "                           ▄████████▀  ████████▀  █▀     ██████████  ▀█   █▀  ████████▀    ██████████        \n\n"
+
 
                 f"• Build: {build[:7]}\n"
                 f"• Version: {'.'.join(list(map(str, list(__version__))))}\n"
@@ -833,7 +833,7 @@ class Hikka:
                     else ""
                 )
                 logging.debug(
-                    "\n🖤SCIENSE🖤 %s #%s (%s) started\n%s",
+                    "\n🪐 Heroku %s #%s (%s) started\n%s",
                     ".".join(list(map(str, list(__version__)))),
                     build[:7],
                     upd,
@@ -843,10 +843,10 @@ class Hikka:
 
             await client.hikka_inline.bot.send_photo(
                 logging.getLogger().handlers[0].get_logid_by_client(client.tg_id),
-                "https://i.pinimg.com/736x/11/5c/65/115c6576c9d51dd10a35d454804af784.jpg",
+                "https://imgur.com/a/uUF9zYL.png",
                 caption=(
-                    "🪐 <b>🖤SCIENSE🖤 {} started!</b>\n\n⚙ <b>GitHub commit SHA: <a"
-                    ' href="https://t.me/Hikka_Python/commit/{}">{}</a></b>\n🔎'
+                    "🪐 <b>Heroku {} started!</b>\n\n⚙ <b>GitHub commit SHA: <a"
+                    ' href="https://github.com/coddrago/Heroku/commit/{}">{}</a></b>\n🔎'
                     " <b>Update status: {}</b>\n<b>{}</b>".format(
                         ".".join(list(map(str, list(__version__)))),
                         build,
